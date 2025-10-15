@@ -71,7 +71,7 @@ export default function Leaderboard() {
         {topUsers.map((user, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center p-4 rounded-2xl bg-gray-900 shadow-xl w-48 ${
+            className={`flex flex-col items-center p-4 rounded-2xl w-48 bg-neutral-900 from-gray-950/80 to-pure-black/70 rounded-2xl shadow-2xl backdrop-blur-lg border border-white/30 ${
               user.position === 'center' ? 'h-64' : 'h-56'
             }`}
           >
@@ -98,7 +98,7 @@ export default function Leaderboard() {
           <tbody>
             {/* 6. Map over the paginated array: currentUsers */}
             {currentUsers.map((user, index) => (
-              <tr key={user.id} className="border-t border-gray-700 hover:bg-gray-700/50">
+              <tr key={user.id} className="relative bg-neutral-900 from-gray-950/80 to-pure-black/70 rounded-2xl shadow-2xl backdrop-blur-lg p-4 sm:p-6 md:p-8 lg:p-10 my-6 min-h-[360px] sm:min-h-[400px] mt-6 sm:mt-8 md:mt-12 border border-white/15">
                 {/* Calculate rank based on page number */}
                 <td className="p-3 text-center w-[10%]">{startIndex + index + 1}</td> 
                 <td className="p-3 text-center">{user.username}</td>
