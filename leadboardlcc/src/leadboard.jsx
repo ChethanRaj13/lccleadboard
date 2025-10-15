@@ -7,14 +7,45 @@ export default function Leaderboard() {
 
 
   const topUsers = [
-    { name: 'Brian Ngo',USN: '02JST23UCS020', points: 2000, position: 'left', image: silver },
-    { name: 'Jolie Joie',USN: '02JST23UCS020', points: 2000, position: 'center', image: gold },
-    { name: 'David Do',USN: '02JST23UCS020' , points: 2000, position: 'right', image: bronze },
+    { name: 'Brian Ngo',USN: '02JST23UCS020', points: 2000, time: "00:00:00" ,position: 'left', image: silver },
+    { name: 'Jolie Joie',USN: '02JST23UCS020', points: 2000,  time: "00:00:00" ,position: 'center', image: gold },
+    { name: 'David Do',USN: '02JST23UCS020' , points: 2000,  time: "00:00:00" ,position: 'right', image: bronze },
   ];
 
   const users = [
-    { id: 4, username: "Henrietta O'Connell", USN: '02JST23UCS020', points: 2114424},
-    { id: 5, username: 'Darrel Bins',USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+        { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+    { id: 4, username: "Henrietta O'Connell",  time: "00:00:00", USN: '02JST23UCS020', points: 2114424},
+    { id: 5, username: 'Darrel Bins',time: "00:00:00",USN: '02JST23UCS020', points: 2114424},
+
   ];
 
   return (
@@ -32,6 +63,7 @@ export default function Leaderboard() {
             <p className="font-semibold text-lg">{user.name}</p>
             <p className="mt-2 text-gray-400 font-bold">{user.USN}</p>
             <p className="text-sm text-blue-400">{user.points} points</p>
+            <p className="mt-1 text-gray-400">{user.time}</p>
           </div>
         ))}
       </div>
@@ -43,7 +75,8 @@ export default function Leaderboard() {
               <th className="p-3 text-center">Rank</th>
               <th className="p-3 text-center">User Name</th>
               <th className="p-3 text-center">USN</th>
-              <th className="p-3 text-center">Points</th> {/* Right-align the header */}
+              <th className="p-3 text-center">Points</th>
+               <th className="p-3 text-center">Time</th>
             </tr>
           </thead>
           <tbody>
@@ -52,6 +85,7 @@ export default function Leaderboard() {
                 <td className="p-3 text-center w-[10%]">{user.id}</td> 
                 <td className="p-3 text-center">{user.username}</td> {/* Assumed 'name' for User Name */}
                 <td className="p-3 text-center">{user.USN}</td> 
+                <td className="p-3 text-center">{user.time}</td> 
                 <td className="p-3 text-center">{user.points.toLocaleString()}</td> {/* Right-align the data and format points */}
               </tr>
             ))}
